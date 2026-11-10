@@ -1,6 +1,6 @@
-# ZelotesMac
+# ZelotesMac C-18
 
-A Mac app for the Zelotes C-18 vertical mouse. It sets the buttons, DPI, lighting and pointer acceleration, so you don't need the vendor's Windows software.
+An Unofficial Mac app for the Zelotes C-18 vertical mouse. It sets the buttons, DPI, lighting and pointer acceleration.
 
 ## Buttons
 
@@ -32,18 +32,25 @@ Keep as many setups as you like. Drag one onto Profile 1 or Profile 2 to put it 
 
 ## Requirements
 
-- macOS 26
-- Xcode 26, to build
+- macOS 26 or later, on Apple silicon or Intel
 - A Zelotes C-18 (USB ID 12C9:2003)
 
+## Install
+
+1. Download `ZelotesMac-0.1.0.dmg` from the [Releases](../../releases) page.
+2. Open it and drag ZelotesMac to Applications.
+3. Open ZelotesMac. The app isn't notarized by Apple, so macOS stops it the first time. Go to System Settings › Privacy & Security, scroll down and click Open Anyway.
+
 ## Build
+
+You need Xcode 26.
 
 ```sh
 ./scripts/build-app.sh
 open build/ZelotesMac.app
 ```
 
-Run the tests with `swift test`.
+Run the tests with `swift test`. Make the DMG with `./scripts/make-dmg.sh`.
 
 ## Good to know
 

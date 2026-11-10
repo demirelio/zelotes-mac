@@ -3,13 +3,14 @@ set -eu
 
 cd "$(dirname "$0")/.."
 
-swift build -c release
+swift build -c release --arch arm64 --arch x86_64
+products="$(swift build -c release --arch arm64 --arch x86_64 --show-bin-path)"
 
 app="build/ZelotesMac.app"
 rm -rf "$app"
 mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources" "$app/Contents/Library/LaunchAgents"
-cp .build/release/ZelotesMac "$app/Contents/MacOS/ZelotesMac"
-cp .build/release/ZelotesPointerAgent "$app/Contents/MacOS/ZelotesPointerAgent"
+cp "$products/ZelotesMac" "$app/Contents/MacOS/ZelotesMac"
+cp "$products/ZelotesPointerAgent" "$app/Contents/MacOS/ZelotesPointerAgent"
 cp Support/Info.plist "$app/Contents/Info.plist"
 cp Support/local.zelotes-mac.pointer.plist "$app/Contents/Library/LaunchAgents/"
 cp Support/*.svg Support/*.png "$app/Contents/Resources/"
