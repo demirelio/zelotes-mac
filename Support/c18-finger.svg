@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Button map for c18-finger.png, in that photo's pixel coordinates.
+  The app reads each element's id and class; see MouseArt.swift.
+  class="region": the outline of a button, lit while that button is selected. A region may run past
+  the edge of the mouse, because the app clips the light to the photo.
+  class="spot": where a button's leader line ends.
+  class="pointer": a line from tail to tip. While the input with that id is selected, a small triangle
+  is drawn with its point at the tip, facing away from the tail.
+  Only absolute M, L, C and Z path commands and <circle> are supported.
+  The fill is only there so the map shows up when this file is opened on its own.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 724 1000" fill="#ff2d55" fill-opacity="0.35" stroke="#ff2d55" stroke-width="1">
+  <path id="button-left" class="region" d="M 180 256 L 196 264 L 201 305 L 194 341 L 184 350 L 211 377 L 228 374 L 244 397 L 265 447 L 282 488 L 283 514 L 273 524 L 305 580 L 336 626 L 342 608 L 349 590 L 359 560 L 370 520 L 377 482 L 395 455 L 410 420 L 418 380 L 419 340 L 415 300 L 407 262 L 399 220 L 393 184 L 388 120 L 384 60 L 384 10 L 350 30 L 310 78 L 262 118 L 218 156 L 176 198 L 166 240 Z"/>
+  <path id="button-right" class="region" d="M 166 250 L 162 296 L 165 334 L 178 350 L 203 381 L 188 425 L 191 463 L 205 505 L 226 541 L 250 548 L 263 534 L 296 592 L 331 642 L 325 672 L 320 706 L 317 742 L 313 783 L 293 788 L 260 767 L 227 738 L 185 701 L 147 655 L 124 605 L 108 567 L 95 522 L 80 480 L 70 470 L 88 398 L 117 330 L 138 296 Z"/>
+  <path id="button-dpi" class="region" d="M 181 261 C 192 261 199 269 200 285 C 201 305 199 326 192 340 C 188 349 177 350 172 344 C 165 334 162 315 163 295 C 164 275 170 261 181 261 Z"/>
+  <path id="button-wheel" class="region" d="M 213 374 C 226 369 236 384 244 398 C 257 421 273 456 281 488 C 285 511 276 536 258 544 C 244 548 230 542 222 532 C 206 510 192 470 189 430 C 189 404 198 380 213 374 Z"/>
+  <path id="button-thumb-rear" class="region" d="M 562 494 L 585 500 L 605 522 L 611 555 L 603 580 L 583 590 L 565 555 L 548 548 L 555 515 Z"/>
+  <path id="button-thumb-front" class="region" d="M 560 567 L 580 590 L 590 615 L 583 648 L 565 670 L 548 678 L 530 672 L 516 635 L 530 590 L 543 565 Z"/>
+  <path id="joystick" class="region" d="M 482 20 C 492 6 512 -2 532 4 C 556 14 576 46 582 80 C 584 98 572 108 558 107 C 548 106 536 98 526 88 L 506 110 C 496 108 482 100 474 80 L 490 52 C 482 42 478 30 482 20 Z"/>
+
+  <circle id="spot-button-left" class="spot" cx="290" cy="230" r="0"/>
+  <circle id="spot-button-dpi" class="spot" cx="182" cy="305" r="0"/>
+  <circle id="spot-button-wheel" class="spot" cx="235" cy="455" r="0"/>
+  <circle id="spot-button-right" class="spot" cx="150" cy="540" r="0"/>
+  <circle id="spot-button-thumb-rear" class="spot" cx="585" cy="545" r="0"/>
+  <circle id="spot-button-thumb-front" class="spot" cx="557" cy="622" r="0"/>
+  <circle id="spot-joystick" class="spot" cx="532" cy="55" r="0"/>
+</svg>

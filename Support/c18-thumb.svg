@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Button map for c18-thumb.png, in that photo's pixel coordinates.
+  See c18-finger.svg for the classes and the supported commands.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 653" fill="#ff2d55" fill-opacity="0.35" stroke="#ff2d55" stroke-width="1">
+  <path id="joystick" class="region" d="M 395 50 C 396 30 412 18 432 19 C 452 20 468 36 468 56 C 468 74 454 88 436 89 C 430 96 420 108 408 112 C 396 112 388 102 392 90 C 396 82 400 76 402 72 C 397 66 395 58 395 50 Z"/>
+  <path id="button-thumb-front" class="region" d="M 286 452 L 300 435 L 335 422 L 370 414 L 380 420 L 383 455 L 370 465 L 335 478 L 302 488 L 288 483 L 284 468 Z"/>
+  <path id="button-thumb-rear" class="region" d="M 383 414 L 400 400 L 440 383 L 470 380 L 485 392 L 488 410 L 480 421 L 445 440 L 410 452 L 390 455 L 382 445 Z"/>
+
+  <!--
+    Which way each joystick input moves the cap in this photo. The vendor's diagram defines them:
+    up is toward the cable, down toward the palm, left toward the thumb side, right toward the finger side.
+  -->
+  <path id="joystick-up" class="pointer" d="M 392 67 L 372 74"/>
+  <path id="joystick-down" class="pointer" d="M 468 41 L 488 34"/>
+  <path id="joystick-left" class="pointer" d="M 443 92 L 450 112"/>
+  <path id="joystick-right" class="pointer" d="M 417 16 L 410 -4"/>
+  <!-- Pressing pushes the cap down its shaft, so this one sits above the cap and points into it. -->
+  <path id="joystick-press" class="pointer" d="M 468 0 L 455 18"/>
+
+  <circle id="spot-joystick" class="spot" cx="430" cy="54" r="0"/>
+  <circle id="spot-button-thumb-front" class="spot" cx="333" cy="452" r="0"/>
+  <circle id="spot-button-thumb-rear" class="spot" cx="436" cy="418" r="0"/>
+</svg>
