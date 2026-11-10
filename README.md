@@ -4,6 +4,17 @@
 
 An Unofficial Mac app for the Zelotes C-18 vertical mouse. It sets the buttons, DPI, lighting and pointer acceleration.
 
+## Sponsor
+
+<a href="https://thewildmagic.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/wildmagic-dark.svg">
+    <img src="docs/images/wildmagic.svg" height="40" alt="Wildmagic">
+  </picture>
+</a>
+
+[Wildmagic](https://thewildmagic.com) sponsors this project.
+
 ## Buttons
 
 Give each of the 11 buttons a click, a keyboard shortcut, a media key, a desktop or Mission Control command, a DPI switch or a profile switch.
