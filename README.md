@@ -1,3 +1,5 @@
+<img src="docs/images/icon.png" width="128" alt="ZelotesMac icon">
+
 # ZelotesMac C-18
 
 An Unofficial Mac app for the Zelotes C-18 vertical mouse. It sets the buttons, DPI, lighting and pointer acceleration.
